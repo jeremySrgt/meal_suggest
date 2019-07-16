@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, //retir la banniere de debug
       theme: ThemeData(
-        primaryColor: Colors.deepOrange,
-        accentColor: Colors.orangeAccent,
+        primaryColor: Colors.blueAccent,
+        accentColor: Colors.lightBlueAccent,
         fontFamily: 'Comfortaa',
       ),
       routes: {

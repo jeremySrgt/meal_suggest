@@ -24,7 +24,7 @@ class _MealSuggestState extends State<MealSuggest> {
       height: height/2,
       child: Swiper(
         itemBuilder: (BuildContext context, int index) {
-          return DayCard();
+          return DayCard(dayIndex: index,);
         },
         itemCount: 7,
         itemWidth: width/1.3,
@@ -32,6 +32,7 @@ class _MealSuggestState extends State<MealSuggest> {
 
         pagination: SwiperPagination(
           margin: EdgeInsets.all(5.0),
+          builder: SwiperPagination.rect,
         ),
       ),
     );

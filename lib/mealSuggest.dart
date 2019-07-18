@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'dayCard.dart';
 
 class MealSuggest extends StatefulWidget {
   @override
@@ -23,16 +24,12 @@ class _MealSuggestState extends State<MealSuggest> {
       height: height/2,
       child: Swiper(
         itemBuilder: (BuildContext context, int index) {
-          return Container(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20.0),
-                child: Image.asset('assets/lundi_106.jpg',fit: BoxFit.fill,),
-              )
-          );
+          return DayCard();
         },
         itemCount: 7,
         itemWidth: width/1.3,
         layout: SwiperLayout.STACK,
+
         pagination: SwiperPagination(
           margin: EdgeInsets.all(5.0),
         ),

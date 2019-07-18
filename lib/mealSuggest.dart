@@ -10,11 +10,17 @@ class MealSuggest extends StatefulWidget {
 }
 
 class _MealSuggestState extends State<MealSuggest> {
+
   @override
   Widget build(BuildContext context) {
+
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    double font = MediaQuery.of(context).textScaleFactor;
+
     return Container(
-      width: 400,
-      height: 400,
+      width: width/1,
+      height: height/2,
       child: Swiper(
         itemBuilder: (BuildContext context, int index) {
           return Container(
@@ -25,7 +31,7 @@ class _MealSuggestState extends State<MealSuggest> {
           );
         },
         itemCount: 7,
-        itemWidth: 300.0,
+        itemWidth: width/1.3,
         layout: SwiperLayout.STACK,
         pagination: SwiperPagination(
           margin: EdgeInsets.all(5.0),

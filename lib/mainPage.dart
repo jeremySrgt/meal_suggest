@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:suggestion_repas/mealSuggest.dart';
+import 'planControl.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -66,9 +67,19 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       bottomNavigationBar: navigationBar(),
-      body: Center(
-        child: pageBuilder(),
+      appBar: AppBar(
+        title: Text('Meal Suggest',style: TextStyle(fontSize: 30.0),),
+        elevation: 0.0,
       ),
+      body: Container(
+        padding: EdgeInsets.only(top: 20.0),
+        child: Column(
+          children: <Widget>[
+            PlanControl(),
+            pageBuilder()
+          ],
+        ),
+      )
     );
   }
 }

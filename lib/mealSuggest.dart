@@ -207,6 +207,8 @@ class _MealSuggestState extends State<MealSuggest> {
             ),
             onPressed: (){
               globals.validatedRecipes = globals.listOfRecipes;
+              print(globals.validatedRecipes);
+              print(globals.listOfRecipes);
 
               final snackBar = SnackBar(
                 content: Text('Liste de course mise à jour !'),

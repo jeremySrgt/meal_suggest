@@ -1,0 +1,62 @@
+{
+  "result": {
+    "resources": [
+      {
+        "name": "Riz cantonais",
+        "picture_url": "pic url",
+        "description": "un plan asiatique facile à faire et très bon",
+        "ingredient_count": 3,
+        "ingredients": ["riz","jambon","petit pois"],
+        "preparation_time": 30
+      },
+      {
+        "name": "Burger",
+        "picture_url": "pic url",
+        "description": "Un hamburger comme à mac do mais en mieux car c'est fait maison",
+        "ingredient_count": 4,
+        "ingredients": ["pain","steak","salade","sauce tomate"],
+        "preparation_time": 15
+      },
+      {
+        "name": "Pate à la carbonara",
+        "picture_url": "pic url",
+        "description": "Tout le monde aime les pates, ba les pates à la carbonara c'est encore meilleur !",
+        "ingredient_count": 4,
+        "ingredients": ["pates","lardons","oeuf","creme fraiche"],
+        "preparation_time": 20
+      },
+      {
+        "name": "Poulet mariné",
+        "picture_url": "pic url",
+        "description": "Un bon poulet préparé avec amour ca a tout de suite plus de gout",
+        "ingredient_count": 2,
+        "ingredients": ["poulet","sauce"],
+        "preparation_time": 35
+      },
+      {
+        "name": "Pates au saumon",
+        "picture_url": "pic url",
+        "description": "Salade de pates au saumons y a rien de mieux pour l'été quand il fait chaud",
+        "ingredient_count": 3,
+        "ingredients": ["Pates","Saumons en morceau","huile"],
+        "preparation_time": 30
+      },
+      {
+        "name": "Purée saucisse",
+        "picture_url": "pic url",
+        "description": "J'ai deja plus d'idée de plat donc la purée saucisse ca passe en attendant une API",
+        "ingredient_count": 2,
+        "ingredients": ["Purée","Saucisses"],
+        "preparation_time": 20
+      },
+      {
+        "name": "Chocolat au lait",
+        "picture_url": "pic url",
+        "description": "Pour les flemmards du dimanche soir",
+        "ingredient_count": 3,
+        "ingredients": ["Poudre de chocolat","lait","tartines"],
+        "preparation_time": 20
+      }
+    ]
+  }
+}

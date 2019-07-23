@@ -26,6 +26,7 @@ dependencies:
   curved_navigation_bar: ^0.3.0
   flutter_swiper: ^1.1.6
   font_awesome_flutter: ^8.5.0
+  flare_flutter: ^1.5.4
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +48,7 @@ flutter:
   assets:
     - assets/lundi_106.jpg
     - assets/burger.png
+    - assets/testjson.json
 
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware.

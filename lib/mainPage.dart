@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:suggestion_repas/mealSuggest.dart';
+import 'shoppingList.dart';
 import 'planControl.dart';
+import 'validatePlan.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -37,19 +39,26 @@ class _MainPageState extends State<MainPage> {
         });
       },
       animationDuration: Duration(milliseconds: 400),
+    );
+  }
 
+  Widget _firstPage(){
+    return Column(
+      children: <Widget>[
+        PlanControl(),
+        MealSuggest(),
+        ValidatePlan(),
+      ],
     );
   }
 
   Widget pageBuilder() {
     switch (_page) {
       case 0:
-        return MealSuggest();
+        return _firstPage();
         break;
       case 1:
-        return Center(
-          child: Text('liste de course'),
-        );
+        return ShoppingList();
         break;
       case 2:
         return Center(
@@ -68,18 +77,20 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Theme.of(context).primaryColor,
       bottomNavigationBar: navigationBar(),
       appBar: AppBar(
-        title: Text('Meal Suggest',style: TextStyle(fontSize: 30.0),),
+        title: Text(
+          'Meal Suggest',
+          style: TextStyle(fontSize: 30.0),
+        ),
         elevation: 0.0,
       ),
       body: Container(
         padding: EdgeInsets.only(top: 20.0),
         child: Column(
           children: <Widget>[
-            PlanControl(),
-            pageBuilder()
+            pageBuilder(),
           ],
         ),
-      )
+      ),
     );
   }
 }

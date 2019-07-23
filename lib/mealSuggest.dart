@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:suggestion_repas/validatePlan.dart';
 import 'dart:convert';
 import 'jsonRespond.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -208,6 +207,13 @@ class _MealSuggestState extends State<MealSuggest> {
             ),
             onPressed: (){
               globals.validatedRecipes = globals.listOfRecipes;
+
+              final snackBar = SnackBar(
+                content: Text('Liste de course mise à jour !'),
+                backgroundColor: Theme.of(context).primaryColor,
+                duration: Duration(milliseconds: 1650),
+              );
+              Scaffold.of(context).showSnackBar(snackBar);
             },
           ),
         ],

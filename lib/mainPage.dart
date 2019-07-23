@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:suggestion_repas/mealSuggest.dart';
 import 'shoppingList.dart';
-import 'planControl.dart';
-import 'validatePlan.dart';
 
 class MainPage extends StatefulWidget {
   @override

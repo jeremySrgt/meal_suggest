@@ -1,10 +1,9 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:suggestion_repas/jsonRespond.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
+import 'globals.dart' as globals;
 
 class PlanControl extends StatefulWidget {
   @override
@@ -17,6 +16,7 @@ class _PlanControlState extends State<PlanControl> {
 
   Map jsonData;
   var recipes;
+  List<dynamic> randomListOfRecipes;
 
   Future<String> loadJsonData() async{
     var jsonString = await rootBundle.loadString('./assets/testjson.json');
@@ -56,8 +56,11 @@ class _PlanControlState extends State<PlanControl> {
               color: Colors.white,
             ),
             onPressed: () {
-//              print(jsonData['result']['resources']);
-            print(recipes.resources);
+            print(recipes.resources);//affiche la 1ere recettes
+            setState(() {
+              randomListOfRecipes = recipes.resources;
+            });
+              globals.listOfRecipes = randomListOfRecipes;
             },
           ),
         ],

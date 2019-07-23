@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'globals.dart' as globals;
 
 class ValidatePlan extends StatefulWidget {
   @override
@@ -24,7 +25,9 @@ class _ValidatePlanState extends State<ValidatePlan> {
               Icons.check,
               color: Colors.white,
             ),
-            onPressed: (){},
+            onPressed: (){
+              globals.validatedRecipes = globals.listOfRecipes;
+            },
           ),
         ],
       ),

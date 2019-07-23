@@ -45,9 +45,9 @@ class _MainPageState extends State<MainPage> {
   Widget _firstPage(){
     return Column(
       children: <Widget>[
-        PlanControl(),
+//        PlanControl(),
         MealSuggest(),
-        ValidatePlan(),
+//        ValidatePlan(),
       ],
     );
   }

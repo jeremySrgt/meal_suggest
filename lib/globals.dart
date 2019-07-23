@@ -1,3 +1,5 @@
 library suggestion_repas.globals;
 
-List<String> listOfIngredients = [];
+List<dynamic> listOfRecipes = [];
+
+List<dynamic> validatedRecipes = [];

@@ -11,14 +11,14 @@ class ShoppingList extends StatefulWidget{
 class _ShoppingListState extends State<ShoppingList>{
 
   Widget listOfIngredients(){
-    if(globals.listOfIngredients.isEmpty){
+    if(globals.validatedRecipes.isEmpty){
       return Center(
         child: Text('La liste de course est vide'),
       );
     }
 
     return Center(
-      child: Text(globals.listOfIngredients.toString()),
+      child: Text(globals.validatedRecipes[1]['ingredients'].toString()),
     );
   }
 
